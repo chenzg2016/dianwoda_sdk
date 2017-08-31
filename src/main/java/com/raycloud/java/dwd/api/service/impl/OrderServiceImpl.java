@@ -201,21 +201,21 @@ public class OrderServiceImpl extends AbstractBaseService implements OrderServic
         BackModel backModel = getOrderInfo(getOrderModel);
         if (backModel.isSuccess()) {
             Integer status = backModel.getGetOrderResponse().getOrder_status();
-            if (type == MessageConstant.CANCEL) {
+            if (type == MessageConstant.CANCEL) {//取消订单
                 //0 3 5 10
                 if (status < DwdStatusEnum.DELIVERY_ORDER.getCode()) {
                     return message;
                 } else {
                     message = "当前订单状态不能取消";
                 }
-            } else if (type == MessageConstant.UPDATE_MARK) {
+            } else if (type == MessageConstant.UPDATE_MARK) {//修改备注
                 if (status == DwdStatusEnum.ACCESS_ORDER.getCode() ||
                         status == DwdStatusEnum.DELIVERY_ORDER.getCode()) {
                     return message;
                 } else {
                     message = "当前订单状态不能更新备注";
                 }
-            } else if (type == MessageConstant.UPDATE_TIP) {
+            } else if (type == MessageConstant.UPDATE_TIP) {//更新小费
                 // 0 3 5 10
                 if (status < DwdStatusEnum.DELIVERY_ORDER.getCode()) {
                     return message;

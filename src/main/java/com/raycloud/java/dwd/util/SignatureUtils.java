@@ -94,12 +94,12 @@ public class SignatureUtils {
      * @return
      */
     public static boolean checkSig(Map<String, Object> paramMap, String appSecret,String oldSig) throws Exception{
-        logger.debug("回调签名校验原始签名：{}",oldSig);
+        logger.debug("回调签名校验原始签名：[{}]",oldSig);
         if (StringUtils.isEmpty(oldSig)){
             return false;
         }
         String sig = signatureGenerate(paramMap,appSecret);
-        logger.debug("回调签名校验参数签名：{}",sig);
+        logger.debug("回调签名校验参数签名：[{}]",sig);
 
         return oldSig.equals(sig);
     }
