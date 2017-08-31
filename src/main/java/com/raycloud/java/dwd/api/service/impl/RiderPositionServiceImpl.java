@@ -10,7 +10,9 @@ import com.raycloud.java.dwd.api.model.response.GetRiderPositionResponse;
 import com.raycloud.java.dwd.api.model.response.ResponseModel;
 import com.raycloud.java.dwd.api.service.RiderPositionService;
 import com.raycloud.java.dwd.api.service.back.BackModel;
-import org.apache.log4j.Logger;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
 
 import java.util.ArrayList;
 import java.util.List;
@@ -26,7 +28,7 @@ import java.util.List;
  */
 public class RiderPositionServiceImpl extends AbstractBaseService implements RiderPositionService {
 
-    private Logger logger = Logger.getLogger(RiderPositionServiceImpl.class);
+    private Logger logger = LoggerFactory.getLogger(RiderPositionServiceImpl.class);
 
     public RiderPositionServiceImpl(Config config) {
         super(config);

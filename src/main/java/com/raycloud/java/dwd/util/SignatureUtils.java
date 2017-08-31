@@ -1,6 +1,9 @@
 package com.raycloud.java.dwd.util;
 
-import org.apache.log4j.Logger;
+
+
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 import java.security.MessageDigest;
 import java.util.*;
@@ -19,7 +22,7 @@ public class SignatureUtils {
     private SignatureUtils(){
 
     }
-    private static Logger logger = Logger.getLogger(SignatureUtils.class);
+    private static Logger logger = LoggerFactory.getLogger(SignatureUtils.class);
 
     /**
      * 签名生成
@@ -91,12 +94,12 @@ public class SignatureUtils {
      * @return
      */
     public static boolean checkSig(Map<String, Object> paramMap, String appSecret,String oldSig) throws Exception{
-        logger.debug("回调签名校验原始签名："+oldSig);
+        logger.debug("回调签名校验原始签名：{}",oldSig);
         if (StringUtils.isEmpty(oldSig)){
             return false;
         }
         String sig = signatureGenerate(paramMap,appSecret);
-        logger.debug("回调签名校验参数签名："+sig);
+        logger.debug("回调签名校验参数签名：{}",sig);
 
         return oldSig.equals(sig);
     }

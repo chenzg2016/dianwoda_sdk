@@ -1,1 +1,59 @@
-[DEBUG][2017-08-30 15:00:23]com.raycloud.java.dwd.api.LoggerTest-debug
+[DEBUG][2017-08-31 11:22:01]com.raycloud.java.dwd.api.LoggerTest-debug
+[DEBUG][2017-08-31 11:23:42]com.raycloud.java.dwd.api.LoggerTest-debug
+[DEBUG][2017-08-31 11:25:57]com.raycloud.java.dwd.api.LoggerTest-debug
+[DEBUG][2017-08-31 11:26:27]com.raycloud.java.dwd.api.LoggerTest-debugdebug
+[DEBUG][2017-08-31 11:28:44]org.apache.http.client.protocol.RequestAddCookies-CookieSpec selected: best-match
+[DEBUG][2017-08-31 11:28:44]org.apache.http.client.protocol.RequestAuthCache-Auth cache not set in the context
+[DEBUG][2017-08-31 11:28:44]org.apache.http.impl.conn.PoolingHttpClientConnectionManager-Connection request: [route: {}->http://60.191.68.46:43580][total kept alive: 0; route allocated: 0 of 2; total allocated: 0 of 20]
+[DEBUG][2017-08-31 11:28:44]org.apache.http.impl.conn.PoolingHttpClientConnectionManager-Connection leased: [id: 0][route: {}->http://60.191.68.46:43580][total kept alive: 0; route allocated: 1 of 2; total allocated: 1 of 20]
+[DEBUG][2017-08-31 11:28:44]org.apache.http.impl.execchain.MainClientExec-Opening connection {}->http://60.191.68.46:43580
+[DEBUG][2017-08-31 11:28:44]org.apache.http.impl.conn.HttpClientConnectionOperator-Connecting to /60.191.68.46:43580
+[DEBUG][2017-08-31 11:28:44]org.apache.http.impl.conn.HttpClientConnectionOperator-Connection established 192.168.59.218:52454<->60.191.68.46:43580
+[DEBUG][2017-08-31 11:28:44]org.apache.http.impl.execchain.MainClientExec-Executing request POST /api/v3/order-accepted-test.json HTTP/1.1
+[DEBUG][2017-08-31 11:28:44]org.apache.http.impl.execchain.MainClientExec-Target auth state: UNCHALLENGED
+[DEBUG][2017-08-31 11:28:44]org.apache.http.impl.execchain.MainClientExec-Proxy auth state: UNCHALLENGED
+[DEBUG][2017-08-31 11:28:44]org.apache.http.headers-http-outgoing-0 >> POST /api/v3/order-accepted-test.json HTTP/1.1
+[DEBUG][2017-08-31 11:28:44]org.apache.http.headers-http-outgoing-0 >> User-Agent: raycloud-sdk-client-java
+[DEBUG][2017-08-31 11:28:44]org.apache.http.headers-http-outgoing-0 >> Content-Length: 119
+[DEBUG][2017-08-31 11:28:44]org.apache.http.headers-http-outgoing-0 >> Content-Type: application/x-www-form-urlencoded;charset=UTF-8
+[DEBUG][2017-08-31 11:28:44]org.apache.http.headers-http-outgoing-0 >> Host: 60.191.68.46:43580
+[DEBUG][2017-08-31 11:28:44]org.apache.http.headers-http-outgoing-0 >> Connection: Keep-Alive
+[DEBUG][2017-08-31 11:28:44]org.apache.http.headers-http-outgoing-0 >> Accept-Encoding: gzip,deflate
+[DEBUG][2017-08-31 11:28:44]org.apache.http.wire-http-outgoing-0 >> "POST /api/v3/order-accepted-test.json HTTP/1.1[\r][\n]"
+[DEBUG][2017-08-31 11:28:44]org.apache.http.wire-http-outgoing-0 >> "User-Agent: raycloud-sdk-client-java[\r][\n]"
+[DEBUG][2017-08-31 11:28:44]org.apache.http.wire-http-outgoing-0 >> "Content-Length: 119[\r][\n]"
+[DEBUG][2017-08-31 11:28:44]org.apache.http.wire-http-outgoing-0 >> "Content-Type: application/x-www-form-urlencoded;charset=UTF-8[\r][\n]"
+[DEBUG][2017-08-31 11:28:44]org.apache.http.wire-http-outgoing-0 >> "Host: 60.191.68.46:43580[\r][\n]"
+[DEBUG][2017-08-31 11:28:44]org.apache.http.wire-http-outgoing-0 >> "Connection: Keep-Alive[\r][\n]"
+[DEBUG][2017-08-31 11:28:44]org.apache.http.wire-http-outgoing-0 >> "Accept-Encoding: gzip,deflate[\r][\n]"
+[DEBUG][2017-08-31 11:28:44]org.apache.http.wire-http-outgoing-0 >> "[\r][\n]"
+[DEBUG][2017-08-31 11:28:44]org.apache.http.wire-http-outgoing-0 >> "pk=10095&timestamp=1504150124801&format=json&sig=0067084EB1ED1FF1F6F0501F95AF043DFB3F2C34&order_original_id=20170829003"
+[DEBUG][2017-08-31 11:28:45]org.apache.http.wire-http-outgoing-0 << "HTTP/1.1 200 [\r][\n]"
+[DEBUG][2017-08-31 11:28:45]org.apache.http.wire-http-outgoing-0 << "Server: Tengine[\r][\n]"
+[DEBUG][2017-08-31 11:28:45]org.apache.http.wire-http-outgoing-0 << "Date: Thu, 31 Aug 2017 03:28:45 GMT[\r][\n]"
+[DEBUG][2017-08-31 11:28:45]org.apache.http.wire-http-outgoing-0 << "Content-Type: application/json;charset=UTF-8[\r][\n]"
+[DEBUG][2017-08-31 11:28:45]org.apache.http.wire-http-outgoing-0 << "Transfer-Encoding: chunked[\r][\n]"
+[DEBUG][2017-08-31 11:28:45]org.apache.http.wire-http-outgoing-0 << "Connection: keep-alive[\r][\n]"
+[DEBUG][2017-08-31 11:28:45]org.apache.http.wire-http-outgoing-0 << "Vary: Accept-Encoding[\r][\n]"
+[DEBUG][2017-08-31 11:28:45]org.apache.http.wire-http-outgoing-0 << "Vary: Accept-Encoding[\r][\n]"
+[DEBUG][2017-08-31 11:28:45]org.apache.http.wire-http-outgoing-0 << "Content-Encoding: gzip[\r][\n]"
+[DEBUG][2017-08-31 11:28:45]org.apache.http.wire-http-outgoing-0 << "[\r][\n]"
+[DEBUG][2017-08-31 11:28:45]org.apache.http.wire-http-outgoing-0 << "8b[\r][\n]"
+[DEBUG][2017-08-31 11:28:45]org.apache.http.wire-http-outgoing-0 << "[0x1f][0x8b][0x8][0x0][0x0][0x0][0x0][0x0][0x0][0x3][0x0]w[0x0][0x88][0xff]{"errorCode":"3001","message":"[0xe4][0xb8][0x9a][0xe5][0x8a][0xa1][0xe9][0x80][0xbb][0xe8][0xbe][0x91][0xe5][0x87][0xba][0xe9][0x94][0x99]:[0xe4][0xb8][0x8d][0xe8][0x83][0xbd][0xe4][0xbb][0x8e][0xe5][0xbd][0x93][0xe5][0x89][0x8d][0xe8][0xae][0xa2][0xe5][0x8d][0x95][0xe7][0x8a][0xb6][0xe6][0x80][0x81][0xe8][0xbd][0xac][0xe6][0x8d][0xa2][0xe4][0xb8][0xba][0xe2][0x80][0x98][0xe5][0x8f][0x96][0xe8][0xb4][0xa7][0xe4][0xb8][0xad][0xe2][0x80][0x99]","success":false}[0x0][0x0][0x0][0xff][0xff][\r][\n]"
+[DEBUG][2017-08-31 11:28:45]org.apache.http.wire-http-outgoing-0 << "a[\r][\n]"
+[DEBUG][2017-08-31 11:28:45]org.apache.http.wire-http-outgoing-0 << "[0x3][0x0]v[0x99]J[0x80]w[0x0][0x0][0x0][\r][\n]"
+[DEBUG][2017-08-31 11:28:45]org.apache.http.wire-http-outgoing-0 << "0[\r][\n]"
+[DEBUG][2017-08-31 11:28:45]org.apache.http.wire-http-outgoing-0 << "[\r][\n]"
+[DEBUG][2017-08-31 11:28:45]org.apache.http.headers-http-outgoing-0 << HTTP/1.1 200 
+[DEBUG][2017-08-31 11:28:45]org.apache.http.headers-http-outgoing-0 << Server: Tengine
+[DEBUG][2017-08-31 11:28:45]org.apache.http.headers-http-outgoing-0 << Date: Thu, 31 Aug 2017 03:28:45 GMT
+[DEBUG][2017-08-31 11:28:45]org.apache.http.headers-http-outgoing-0 << Content-Type: application/json;charset=UTF-8
+[DEBUG][2017-08-31 11:28:45]org.apache.http.headers-http-outgoing-0 << Transfer-Encoding: chunked
+[DEBUG][2017-08-31 11:28:45]org.apache.http.headers-http-outgoing-0 << Connection: keep-alive
+[DEBUG][2017-08-31 11:28:45]org.apache.http.headers-http-outgoing-0 << Vary: Accept-Encoding
+[DEBUG][2017-08-31 11:28:45]org.apache.http.headers-http-outgoing-0 << Vary: Accept-Encoding
+[DEBUG][2017-08-31 11:28:45]org.apache.http.headers-http-outgoing-0 << Content-Encoding: gzip
+[DEBUG][2017-08-31 11:28:45]org.apache.http.impl.execchain.MainClientExec-Connection can be kept alive indefinitely
+[DEBUG][2017-08-31 11:28:45]org.apache.http.impl.conn.PoolingHttpClientConnectionManager-Connection [id: 0][route: {}->http://60.191.68.46:43580] can be kept alive indefinitely
+[DEBUG][2017-08-31 11:28:45]org.apache.http.impl.conn.PoolingHttpClientConnectionManager-Connection released: [id: 0][route: {}->http://60.191.68.46:43580][total kept alive: 1; route allocated: 1 of 2; total allocated: 1 of 20]
+[DEBUG][2017-08-31 11:28:45]org.apache.http.impl.execchain.MainClientExec-Cancelling request execution

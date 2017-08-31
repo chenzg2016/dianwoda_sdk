@@ -11,7 +11,9 @@ import com.raycloud.java.dwd.api.web.impl.WebUtilProxy;
 import com.raycloud.java.dwd.api.service.back.BackModel;
 import com.raycloud.java.dwd.util.SignatureUtils;
 import com.raycloud.java.dwd.util.StringUtils;
-import org.apache.log4j.Logger;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
 
 import java.util.List;
 import java.util.Map;
@@ -28,7 +30,7 @@ import java.util.Map;
  */
 public abstract class AbstractBaseService {
 
-    Logger logger = Logger.getLogger(AbstractBaseService.class);
+    Logger logger = LoggerFactory.getLogger(AbstractBaseService.class);
 
     private Config config;
     private WebUtilProxy webUtilProxy;
@@ -68,8 +70,8 @@ public abstract class AbstractBaseService {
                 throw new Exception(message);
             }
         }catch (IllegalAccessException ie){
-            logger.error("点我达checkParamValue校验失败",ie);
-            throw new Exception("获取参数注解时失败了"+ie);
+            logger.error("点我达checkParamValue校验失败{}",ie);
+            throw new Exception("获取参数注解时失败了错误信息",ie);
         }
     }
 
@@ -84,7 +86,7 @@ public abstract class AbstractBaseService {
            String message = ParamUtils.checkParamValues(objects);
            return message;
         }catch (IllegalAccessException ie){
-            logger.error("点我达checkParamValues校验失败",ie);
+            logger.error("点我达checkParamValues校验失败{}",ie);
             throw new Exception("获取参数注解时失败了"+ie);
         }
     }

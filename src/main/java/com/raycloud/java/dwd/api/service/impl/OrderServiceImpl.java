@@ -4,7 +4,6 @@ import com.alibaba.fastjson.JSON;
 import com.raycloud.java.dwd.api.base.Config;
 import com.raycloud.java.dwd.api.constants.DwdUrlConstant;
 import com.raycloud.java.dwd.api.constants.MessageConstant;
-import com.raycloud.java.dwd.api.constants.SystemParamConfig;
 import com.raycloud.java.dwd.api.enums.DwdStatusEnum;
 import com.raycloud.java.dwd.api.model.*;
 import com.raycloud.java.dwd.api.model.response.GetOrderResponse;
@@ -14,7 +13,8 @@ import com.raycloud.java.dwd.api.service.OrderService;
 import com.raycloud.java.dwd.api.service.back.BackModel;
 import com.raycloud.java.dwd.callback.impl.OrderCallbackServiceImpl;
 import com.raycloud.java.dwd.util.StringUtils;
-import org.apache.log4j.Logger;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 import java.util.List;
 
@@ -29,7 +29,7 @@ import java.util.List;
  */
 public class OrderServiceImpl extends AbstractBaseService implements OrderService {
 
-    private Logger logger = Logger.getLogger(OrderCallbackServiceImpl.class);
+    private Logger logger = LoggerFactory.getLogger(OrderCallbackServiceImpl.class);
 
     public OrderServiceImpl(Config config) {
         super(config);

@@ -4,13 +4,13 @@ import com.alibaba.fastjson.JSON;
 import com.raycloud.java.dwd.api.base.Config;
 import com.raycloud.java.dwd.api.constants.DwdUrlConstant;
 import com.raycloud.java.dwd.api.constants.MessageConstant;
-import com.raycloud.java.dwd.api.model.response.GetOrderResponse;
 import com.raycloud.java.dwd.api.model.response.OrderOptionModel;
 import com.raycloud.java.dwd.api.model.response.ResponseModel;
 import com.raycloud.java.dwd.api.service.back.BackModel;
 import com.raycloud.java.dwd.api.service.impl.AbstractBaseService;
 import com.raycloud.java.dwd.callback.OrderCallbackService;
-import org.apache.log4j.Logger;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 /**
  * Created by:  intelliJ IDEA
@@ -23,7 +23,7 @@ import org.apache.log4j.Logger;
  */
 public class OrderCallbackServiceImpl extends AbstractBaseService implements OrderCallbackService {
 
-    private Logger logger = Logger.getLogger(OrderCallbackServiceImpl.class);
+    private Logger logger = LoggerFactory.getLogger(OrderCallbackServiceImpl.class);
 
     public OrderCallbackServiceImpl(Config config) {
         super(config);

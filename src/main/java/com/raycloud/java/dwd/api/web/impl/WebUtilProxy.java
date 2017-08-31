@@ -1,7 +1,9 @@
 package com.raycloud.java.dwd.api.web.impl;
 
 import com.raycloud.java.dwd.api.web.WebUtilService;
-import org.apache.log4j.Logger;
+
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 import java.io.IOException;
 
@@ -16,7 +18,7 @@ import java.io.IOException;
  */
 public class WebUtilProxy implements WebUtilService {
 
-    Logger logger = Logger.getLogger(WebUtilService.class);
+    private static Logger  logger = LoggerFactory.getLogger(WebUtilService.class);
 
     private WebUtilServiceImpl webUtilServiceImpl;
 
@@ -41,11 +43,11 @@ public class WebUtilProxy implements WebUtilService {
     }
 
     private void beforeAction(String url){
-        logger.info("点我达请求Url："+url+"开始");
+        logger.info("点我达请求Url{}开始",url);
     }
 
     private void afterAction(String url){
-        logger.info("点我达请求Url："+url+"结束");
+        logger.info("点我达请求url{}结束",url);
     }
 
 }

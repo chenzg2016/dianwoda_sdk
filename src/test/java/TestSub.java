@@ -11,8 +11,6 @@ import org.junit.Test;
  */
 public class TestSub {
 
-
-
     @Test
     public void  testSub(){
         int n =10;

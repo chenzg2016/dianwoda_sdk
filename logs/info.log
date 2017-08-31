@@ -1,1 +1,7 @@
-[INFO][2017-08-30 15:00:23]com.raycloud.java.dwd.api.LoggerTest-info
+[INFO][2017-08-31 11:22:01]com.raycloud.java.dwd.api.LoggerTest-info
+[INFO][2017-08-31 11:23:42]com.raycloud.java.dwd.api.LoggerTest-info
+[INFO][2017-08-31 11:25:57]com.raycloud.java.dwd.api.LoggerTest-infodebug
+[INFO][2017-08-31 11:26:27]com.raycloud.java.dwd.api.LoggerTest-infoinfo
+[INFO][2017-08-31 11:28:44]com.raycloud.java.dwd.api.web.WebUtilService-点我达请求Url：http://60.191.68.46:43580/api/v3/order-accepted-test.json开始
+[INFO][2017-08-31 11:28:45]com.raycloud.java.dwd.api.web.impl.WebUtilServiceImpl-请求返回{"errorCode":"3001","message":"业务逻辑出错:不能从当前订单状态转换为‘取货中’","success":false}
+[INFO][2017-08-31 11:28:45]com.raycloud.java.dwd.api.web.WebUtilService-点我达请求Url：http://60.191.68.46:43580/api/v3/order-accepted-test.json结束

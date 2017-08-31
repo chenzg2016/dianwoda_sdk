@@ -12,7 +12,9 @@ import com.raycloud.java.dwd.api.model.response.ResponseModel;
 import com.raycloud.java.dwd.api.service.OrderComplainService;
 import com.raycloud.java.dwd.api.service.back.BackModel;
 import com.raycloud.java.dwd.util.StringUtils;
-import org.apache.log4j.Logger;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
 
 import java.util.List;
 
@@ -28,7 +30,7 @@ import java.util.List;
  */
 public class OrderComplainServiceImpl extends AbstractBaseService implements OrderComplainService {
 
-    private Logger logger = Logger.getLogger(OrderComplainServiceImpl.class);
+    private Logger logger = LoggerFactory.getLogger(OrderComplainServiceImpl.class);
 
     public OrderComplainServiceImpl(Config config) {
         super(config);

@@ -1,8 +1,9 @@
 package com.raycloud.java.dwd.api;
 
-import org.apache.log4j.Logger;
 import org.junit.Before;
 import org.junit.Test;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 /**
  * Created by:  intelliJ IDEA
@@ -14,15 +15,19 @@ import org.junit.Test;
  * @Modified By:
  */
 public class LoggerTest {
-    private Logger logger = Logger.getLogger(LoggerTest.class);
+    private Logger logger = LoggerFactory.getLogger(LoggerTest.class);
 
 
 
     @Test
     public void testLogger(){
-        logger.error("error");
-        logger.info("info");
-        logger.debug("debug");
+        String a = "info";
+        String b = "debug";
+        String c = "error";
+
+        logger.error("error{}",c);
+        logger.info("info{}",a);
+        logger.debug("debug{}",b);
     }
 
 

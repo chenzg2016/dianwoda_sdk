@@ -10,7 +10,9 @@ import com.raycloud.java.dwd.api.model.response.ResponseModel;
 import com.raycloud.java.dwd.api.service.BatchSaveStoreService;
 import com.raycloud.java.dwd.api.service.back.BackModel;
 import com.raycloud.java.dwd.util.StringUtils;
-import org.apache.log4j.Logger;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
 
 import java.util.ArrayList;
 import java.util.List;
@@ -26,7 +28,7 @@ import java.util.List;
  */
 public class BatchSaveStoreServiceImpl extends AbstractBaseService implements BatchSaveStoreService {
 
-    private Logger logger = Logger.getLogger(BatchSaveStoreServiceImpl.class);
+    private Logger logger = LoggerFactory.getLogger(BatchSaveStoreServiceImpl.class);
 
     public BatchSaveStoreServiceImpl(Config config) {
         super(config);

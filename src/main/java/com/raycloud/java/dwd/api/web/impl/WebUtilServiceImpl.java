@@ -12,7 +12,9 @@ import org.apache.http.impl.client.CloseableHttpClient;
 import org.apache.http.impl.client.HttpClients;
 import org.apache.http.protocol.HTTP;
 import org.apache.http.util.EntityUtils;
-import org.apache.log4j.Logger;
+
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 import java.io.IOException;
 
@@ -27,7 +29,7 @@ import java.io.IOException;
  */
 public class WebUtilServiceImpl implements WebUtilService {
 
-    private Logger logger = Logger.getLogger(WebUtilServiceImpl.class);
+    private Logger logger = LoggerFactory.getLogger(WebUtilServiceImpl.class);
     //declare client
     private CloseableHttpClient client = HttpClients.createDefault();
     //set connection time out
@@ -63,7 +65,7 @@ public class WebUtilServiceImpl implements WebUtilService {
         HttpEntity entity = response.getEntity();
         String result = EntityUtils.toString(entity, "UTF-8");
         post.releaseConnection();
-        logger.info("请求返回"+result);
+        logger.info("请求返回{}",result);
         return result;
     }
 
